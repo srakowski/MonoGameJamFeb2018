@@ -2,15 +2,12 @@
 // This file is subject to the terms and conditions defined in
 // file 'LICENSE', which is part of this source code package.
 
-using Coldsteel;
+using Microsoft.Xna.Framework;
 
-namespace MonoGameJamFeb2018.Scenes
+namespace MonoGameJamFeb2018
 {
-    static class GameplayScene
+    static class GameColors
     {
-        public static Scene Create(object param)
-        {
-            return new Scene();
-        }
+        public static Color DarkRed { get; } = new Color(115, 16, 24);
     }
 }

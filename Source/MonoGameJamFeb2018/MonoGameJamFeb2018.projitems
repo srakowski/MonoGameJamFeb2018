@@ -9,7 +9,12 @@
     <Import_RootNamespace>MonoGameJamFeb2018</Import_RootNamespace>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)GameColors.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Scenes\GameplayScene.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Scenes\OutpostScene.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Scenes\TitleScene.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Scripts\FadeInAudio.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Scripts\FadeInSprite.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)UntitledGame.cs" />
   </ItemGroup>
 </Project>

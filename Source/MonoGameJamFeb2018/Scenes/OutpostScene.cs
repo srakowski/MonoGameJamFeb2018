@@ -6,7 +6,7 @@ using Coldsteel;
 
 namespace MonoGameJamFeb2018.Scenes
 {
-    static class GameplayScene
+    static class OutpostScene
     {
         public static Scene Create(object param)
         {

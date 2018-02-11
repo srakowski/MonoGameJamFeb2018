@@ -16,10 +16,15 @@ namespace MonoGameJamFeb2018
         public UntitledGame()
         {
             _graphics = new GraphicsDeviceManager(this);
+            _graphics.PreferredBackBufferWidth = 1920;
+            _graphics.PreferredBackBufferHeight = 1080;
+
             Content.RootDirectory = "Content";
 
             _engine = new Engine(this,
                 new SceneCatalog()
+                    .AddScene(nameof(TitleScene), TitleScene.Create)
+                    .AddScene(nameof(OutpostScene), OutpostScene.Create)
                     .AddScene(nameof(GameplayScene), GameplayScene.Create)
             );
 
@@ -29,7 +34,7 @@ namespace MonoGameJamFeb2018
         protected override void Initialize()
         {
             base.Initialize();
-            _engine.Start(nameof(GameplayScene));
+            _engine.Start(nameof(TitleScene));
         }
     }
 }
