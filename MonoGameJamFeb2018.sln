@@ -1,0 +1,41 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2005
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "MonoGameJamFeb2018", "Source\MonoGameJamFeb2018\MonoGameJamFeb2018.shproj", "{3AEA59C7-4A93-461C-828E-E24F8C175528}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Coldsteel", "coldsteel\Source\Coldsteel\Coldsteel.shproj", "{F4140E6E-B02C-4A1A-93C3-370B1361D1E3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Coldsteel.DesktopGL", "coldsteel\Source\Coldsteel.DesktopGL\Coldsteel.DesktopGL.csproj", "{21716027-9C04-478F-8839-308B590B9F59}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonoGameJamFeb2018.DesktopGL", "Source\MonoGameJamFeb2018.DesktopGL\MonoGameJamFeb2018.DesktopGL.csproj", "{28ACDE86-D285-4E25-9898-DB68ECCBE215}"
+EndProject
+Global
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		coldsteel\Source\Coldsteel\Coldsteel.projitems*{21716027-9c04-478f-8839-308b590b9f59}*SharedItemsImports = 4
+		Source\MonoGameJamFeb2018\MonoGameJamFeb2018.projitems*{28acde86-d285-4e25-9898-db68eccbe215}*SharedItemsImports = 4
+		Source\MonoGameJamFeb2018\MonoGameJamFeb2018.projitems*{3aea59c7-4a93-461c-828e-e24f8c175528}*SharedItemsImports = 13
+		coldsteel\Source\Coldsteel\Coldsteel.projitems*{f4140e6e-b02c-4a1a-93c3-370b1361d1e3}*SharedItemsImports = 13
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{21716027-9C04-478F-8839-308B590B9F59}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21716027-9C04-478F-8839-308B590B9F59}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21716027-9C04-478F-8839-308B590B9F59}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21716027-9C04-478F-8839-308B590B9F59}.Release|Any CPU.Build.0 = Release|Any CPU
+		{28ACDE86-D285-4E25-9898-DB68ECCBE215}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28ACDE86-D285-4E25-9898-DB68ECCBE215}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28ACDE86-D285-4E25-9898-DB68ECCBE215}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28ACDE86-D285-4E25-9898-DB68ECCBE215}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {550AF102-89E8-4AF1-9550-F05F95165935}
+	EndGlobalSection
+EndGlobal
