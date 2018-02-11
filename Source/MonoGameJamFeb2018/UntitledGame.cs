@@ -4,6 +4,7 @@
 
 using Coldsteel;
 using Microsoft.Xna.Framework;
+using MonoGameJamFeb2018.Scenes;
 
 namespace MonoGameJamFeb2018
 {
@@ -19,10 +20,16 @@ namespace MonoGameJamFeb2018
 
             _engine = new Engine(this,
                 new SceneCatalog()
-                    .AddScene("MainMenu", Scenes.MainMenuScene.Create)
+                    .AddScene(nameof(GameplayScene), GameplayScene.Create)
             );
 
             Components.Add(_engine);
+        }
+
+        protected override void Initialize()
+        {
+            base.Initialize();
+            _engine.Start(nameof(GameplayScene));
         }
     }
 }
