@@ -9,5 +9,7 @@
     <Import_RootNamespace>MonoGameJamFeb2018</Import_RootNamespace>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Scenes\MainMenuScene.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)UntitledGame.cs" />
   </ItemGroup>
 </Project>
