@@ -8,12 +8,12 @@ using MonoGameJamFeb2018.Scenes;
 
 namespace MonoGameJamFeb2018
 {
-    public class UntitledGame : Game
+    public class AfterglowGame : Game
     {
         private readonly GraphicsDeviceManager _graphics;
         private readonly Engine _engine;
 
-        public UntitledGame()
+        public AfterglowGame()
         {
             _graphics = new GraphicsDeviceManager(this);
             _graphics.PreferredBackBufferWidth = 1920;

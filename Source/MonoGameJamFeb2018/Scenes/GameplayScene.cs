@@ -3,6 +3,7 @@
 // file 'LICENSE', which is part of this source code package.
 
 using Coldsteel;
+using MonoGameJamFeb2018.Entities;
 
 namespace MonoGameJamFeb2018.Scenes
 {
@@ -10,7 +11,16 @@ namespace MonoGameJamFeb2018.Scenes
     {
         public static Scene Create(object param)
         {
-            return new Scene();
+            var scene = new Scene();
+
+            scene.AddEntity(new Background("Textures/backdrop"));
+            scene.AddEntity(new Starfield());
+
+            scene.AddEntity(new Ship()
+                .TranslateTo(100, 100)
+            );
+
+            return scene;
         }
     }
 }

@@ -13,7 +13,7 @@ namespace MonoGameJamFeb2018.DesktopGL
         [STAThread]
         static void Main()
         {
-            using (var game = new UntitledGame())
+            using (var game = new AfterglowGame())
                 game.Run();
         }
     }
