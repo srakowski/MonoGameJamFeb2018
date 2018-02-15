@@ -2,15 +2,9 @@
 // This file is subject to the terms and conditions defined in
 // file 'LICENSE', which is part of this source code package.
 
-using Coldsteel;
-
-namespace MonoGameJamFeb2018.Scenes
+namespace MonoGameJamFeb2018.Gameplay
 {
-    static class OutpostScene
+    abstract class GamePhase
     {
-        public static Scene Create(object param)
-        {
-            return new Scene();
-        }
     }
 }

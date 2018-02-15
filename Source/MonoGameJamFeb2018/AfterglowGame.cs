@@ -24,8 +24,8 @@ namespace MonoGameJamFeb2018
             _engine = new Engine(this,
                 new SceneCatalog()
                     .AddScene(nameof(TitleScene), TitleScene.Create)
-                    .AddScene(nameof(OutpostScene), OutpostScene.Create)
-                    .AddScene(nameof(GameplayScene), GameplayScene.Create)
+                    .AddScene(nameof(SetupScene), SetupScene.Create)
+                    .AddScene(nameof(MissionScene), MissionScene.Create)
             );
 
             Components.Add(_engine);
@@ -35,6 +35,7 @@ namespace MonoGameJamFeb2018
         {
             base.Initialize();
             _engine.Start(nameof(TitleScene));
+            //_engine.Start(nameof(SetupScene), Gameplay.GameState.NewGame());
         }
     }
 }

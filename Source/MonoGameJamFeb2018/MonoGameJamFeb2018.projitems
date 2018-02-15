@@ -10,20 +10,36 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="$(MSBuildThisFileDirectory)Entities\Background.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entities\ListView.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entities\ListViewConfig.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Entities\MainMenu.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Entities\MenuController.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Entities\MenuOption.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Entities\Ship.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Entities\Starfield.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)GameColors.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Scenes\GameplayScene.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Scenes\OutpostScene.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Gameplay\Character.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Gameplay\GamePhase.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Gameplay\GameState.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Gameplay\Item.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Gameplay\Mission.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Gameplay\Phases\MissionPhase.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Gameplay\Outpost.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Gameplay\Characters.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Gameplay\OuterRim.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Gameplay\Party.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Gameplay\RebelBank.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Gameplay\RebelCommand.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Gameplay\Phases\SetupPhase.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Gameplay\Store.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Scenes\MissionScene.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Scenes\GamePhaseSceneLocator.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Scenes\SetupScene.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Scenes\TitleScene.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Scripts\FadeInAudio.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Scripts\FadeOutSprite.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Scripts\FadeInSprite.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)AfterglowGame.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="$(MSBuildThisFileDirectory)Gameplay\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Gameplay\Phases\" />
   </ItemGroup>
 </Project>

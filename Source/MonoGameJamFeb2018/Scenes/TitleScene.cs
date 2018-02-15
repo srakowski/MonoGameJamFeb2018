@@ -15,17 +15,17 @@ namespace MonoGameJamFeb2018.Scenes
         { 
             var scene = new Scene();
 
+            var fader = Entity.Empty
+                .ScaleTo(1920, 1080)
+                .AddSpriteRenderer("Textures/empty", color: Color.Black, origin: Vector2.Zero)
+                .AddComponent(new FadeInSprite())
+                .AddAudioSource("Songs/DarkTimes", autoPlay: true, loop: true)
+                .AddComponent(new FadeInAudio());
+
             scene
                 .AddEntity(new Background("Textures/title"))
-                .AddEntity(new MainMenu())
-                .AddEntity(
-                    Entity.Empty
-                        .ScaleTo(1920, 1080)
-                        .AddSpriteRenderer("Textures/empty", color: Color.Black, origin: Vector2.Zero)
-                        .AddComponent(new FadeInSprite())
-                        .AddAudioSource("Songs/DarkTimes", autoPlay: true, loop: true)
-                        .AddComponent(new FadeInAudio())
-                );
+                .AddEntity(new MainMenu(fader))
+                .AddEntity(fader);
 
             return scene;
         }
